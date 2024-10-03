@@ -1,0 +1,86 @@
+*{
+    font-family: sans-serif;
+}
+header > nav{
+    display:flex;
+    flex-direction: row;
+}
+header > nav > div{
+    flex-grow: 1;
+    font-size:22px;
+    color: purple;
+}
+header > nav > div:nth-child(2){
+    text-align:  right;
+}
+section#exam-body{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+div#login-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height:80vh;
+}
+div#login-form > h2 {
+    font-family: sans-serif;
+}
+div#form > div {
+    margin:40px 0;
+}
+div#form > div > label{
+    font-size: 22px;
+    color:purple;
+    font-family: monospace;
+}
+div#form > div > input{
+    width:100%;
+    height:30px;
+    border-radius: 10px;
+    border:5px solid purple
+}
+div#form > h2{
+    font-size: 22px;
+    color:purple;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+div#form > div > input:focus{
+    border:3px solid purple
+}
+div#error-message{
+    display:flex;
+    justify-content : center;
+    font-size:18px;
+}
+div.button{
+    display: flex;
+    justify-content: center;
+}
+div.button > button{
+    padding:10px 30px;
+    background-color: purple;
+    border:2px solid purple;
+    color:white;
+    font-size: 20px;;
+    border-radius: 5px;
+}
+div.button > button:hover{
+    color:purple;
+    background-color: white;
+}
+div.register{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+div.register > a{
+    text-decoration: none;
+    color:purple;
+}
+div.register > a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

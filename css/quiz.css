@@ -1,0 +1,162 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    padding:10px;
+}
+header > nav{
+    display:flex;
+    flex-direction: row;
+}
+header > nav > div{
+    flex-grow: 1;
+    font-size:22px;
+    color: purple;
+}
+header > nav > div:nth-child(2){
+    text-align:  right;
+}
+section#exam-body{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    animation:popUp 2s ease-in-out;
+}
+section#exam-body > div.course{
+    font-size: 22px;
+    font-family:monospace;
+}
+section#exam-body > strong{
+    margin:15px 0;
+    font-size: 20px;
+}
+section#exam-body > div#options> p{
+    text-align: center;
+    font-size: 18px;
+    font-weight:900;
+    max-width: 50vw;
+}
+section#exam-body > div#options{
+    margin:auto;
+}
+section#exam-body > div#options > div.question-holder > ul{
+  width:500px;
+  margin: auto;
+}
+section#exam-body > div#options > div.question-holder > ul > li{
+    font-size:18px;
+    border:2px solid purple;
+    list-style-type: none;
+    padding:20px 10px;
+    margin:5px 0;
+    border-radius: 15px;
+}
+div#button{
+    display:flex;
+    margin-top:15px;
+    font-family: sans-serif;
+}
+
+div#question-status{
+    font-size: 25px;
+}
+
+div#button button{
+    padding:8px 100px;
+    color:black;
+    border-radius:15px;
+    font-size: 18px;
+    border-color: rgb(224, 14, 224) ;
+}
+div#button button:first-child{
+    margin:0px 20px;
+    background-color: rgb(224, 14, 224);
+}
+div#button button:nth-child(2){
+    border-radius: 2px solid rgb(243, 172, 243);
+    background-color: rgb(243, 172, 243);
+}
+div#button button:nth-child(3){
+    color:white;
+    border-radius: 2px solidrgb(139, 33, 47);
+    background-color: rgb(139, 33, 47);
+    display:none;
+}
+div.question-holder{
+    display:none;
+}
+
+/* Start of Modal Styling*/
+div#modal-container{
+
+    position: fixed;
+    top:0;
+    left:100;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+div.content{
+    background-color: #fff;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    width:80%;
+    max-width: 400px;
+}
+div.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
+}
+span.close-modal{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+div.modal-body{
+    padding:20px;
+}
+div.modal-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+div.modal-footer > button.btn-cancel{
+    padding:8px 100px;
+    color:white;
+    border:2px solid purple;
+    border-radius:15px;
+    font-size: 20px;
+    background-color: purple ;
+    font-family: sans-serif;
+
+}
+div.modal-footer > button.btn-ok{
+    background-color: #337ab7;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*End of Modal Styling*/
+
+@keyframes popUp {
+    0%{
+      transform: scale(0);
+    }
+
+    100%{
+       transform: scale(1);
+    }
+}

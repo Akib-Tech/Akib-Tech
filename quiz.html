@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Examination</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>QuizMaster</div>
+            <div>Quiz Master</div>
+        </nav>
+    </header>
+
+    <section id="exam-body">
+        <div class="course">Course Code : <b>AEC 201</b></div>
+        <Strong id="time">59:59</Strong>
+    
+        <div id="options"></div>      
+         </div>
+        <div id="question-status">
+            <b id="current"></b> of <b id="total"></b>
+        </div>
+        <div id="button">  
+            <button class="prev" id="previous-button">Prev</button>
+            <button class="next" id="next-button">Next</button>
+            <button id="submit-button">SUBMIT</button>
+        </div>
+    </section>
+
+<!-- Start of Modal Class-->
+<div id="modal-container">
+    <div class="content">
+        <div class="header"> 
+            <h2>QuizMaster Result</h2>
+            <span class="close-modal"></span>
+        </div>
+        <div class="modal-body">
+            <p id="result-message">Congratulations, You Score 20%</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-cancel modal-btn">Cancel</button>
+           <!-- <button class="btn-ok modal-btn">Logout</button> -->
+        </div>
+    </div>
+</div>
+
+<!-- End of Modal Class-->
+    <script src="js/quiz.js"></script>
+</body>
+</html>
